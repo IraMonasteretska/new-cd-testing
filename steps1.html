@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="stepspage">
+        <div class="stepsprogressline">
+        </div>
+        <div class="stepspage__header">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <p class="pagenum">Step 1 of 6</p>
+        </div>
+        <div class="stepspage__body">
+            <div class="stepsection twocol step1">
+                <div class="leftsect">
+                    <div class="includesbox">
+                        <p class="title">Your package includes</p>
+                        <ul>
+                            <li>Companionship</li>
+                            <li>Meal Preparation</li>
+                            <li>Light Housekeeping</li>
+                            <li>Medication Reminders</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightsect">
+                    <div class="steps__content">
+                        <p class="title">Do you need any of the following services?</p>
+                        <div class="steps__checkboxfield">
+                            <input type="checkbox" id="1">
+                            <label for="1">
+                                <p class="checktitle">Trasnportation</p>
+                                <p class="checkdescr">Commute to any place you want </p>
+                            </label>
+                        </div>
+                        <div class="steps__checkboxfield">
+                            <input type="checkbox" id="2">
+                            <label for="2">
+                                <p class="checktitle">Pet Care</p>
+                                <p class="checkdescr">Take care of your pet</p>
+                            </label>
+                        </div>
+                        <div class="steps__checkboxfield">
+                            <input type="checkbox" id="3">
+                            <label for="3">
+                                <p class="checktitle">Technical Assistance</p>
+                                <p class="checkdescr">Tech assistance with your phone and others</p>
+                            </label>
+                        </div>
+                        <div class="steps__checkboxfield">
+                            <input type="checkbox" id="4">
+                            <label for="4">
+                                <p class="checktitle">Shopping & Restocking</p>
+                                <p class="checkdescr">Shopping & other errands you needs</p>
+                            </label>
+                        </div>
+                        <div class="steps__checkboxfield nocheck">
+                            <input type="checkbox" id="5">
+                            <label for="5">
+                                <p class="checktitle">None of above</p>
+                            </label>
+                        </div>
+                        <div class="steps__textarea">
+                            <p class="title">Need more services than listed? </p>
+                            <textarea placeholder="Please specify it here"></textarea>
+                        </div>
+                        <a href="steps2.html" class="nextbtn disabled">
+                            Next
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

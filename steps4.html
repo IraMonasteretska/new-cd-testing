@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="stepspage">
+        <div class="stepsprogressline prline4">
+        </div>
+        <div class="stepspage__header">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <p class="pagenum">Step 4 of 6</p>
+        </div>
+        <div class="stepspage__body">
+            <div class="stepsection step4">
+                <div class="stepsection__inptswrap">
+                    <p class="title">How soon do you want to start your service</p>
+                    <div class="radiofields">
+                        <div class="radiofieldbox">
+                            <input type="radio" name="radio3" id="1">
+                            <label for="1">ASAP</label>
+                        </div>
+                        <div class="radiofieldbox">
+                            <input type="radio" name="radio3" id="2">
+                            <label for="2">1-2 weeks</label>
+                        </div>
+                        <div class="radiofieldbox">
+                            <input type="radio" name="radio3" id="3">
+                            <label for="3">1-2 month</label>
+                        </div>
+                        <div class="radiofieldbox">
+                            <input type="radio" name="radio3" id="4">
+                            <label for="4">I’m not sure</label>
+                        </div>
+                        <div class="radiofieldbox">
+                            <input type="radio" name="radio3" id="5">
+                            <label for="5">I’ve a specific date in mind</label>
+                        </div>
+                    </div>
+                    <div class="calendarsection">
+                        <p class="title">Please enter the starting date</p>
+                        <div class="calendarfield">
+                            <input type="text" id="datepicker1" autocomplete="off" inputmode="none">
+                            <label class="calplaceholder" for="datepicker1">Select Date</label>
+                            <label class="calicon" for="datepicker1"><img src="img/calendar.svg" alt="calendar"></label>
+                        </div>
+                    </div>
+                    <a href="steps5.html" class="nextbtn disabled">
+                        Next
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>

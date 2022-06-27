@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="shortcut icon" href="favicon/favicon.png">
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="stepspage">
+        <div class="stepsprogressline prline5">
+        </div>
+        <div class="stepspage__header">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <p class="pagenum">Step 5 of 6</p>
+        </div>
+        <div class="stepspage__body">
+            <div class="stepsection step5">
+                <div class="stepsection__inptswrap">
+                    <p class="title">Enter your information to get an estimation</p>
+                    <div class="inputfields">
+                        <div class="inputfield">
+                            <input type="text" id="name" required autocomplete="off">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="inputfield">
+                            <input type="number" id="tel" required autocomplete="off">
+                            <label for="tel">Phone Number</label>
+                        </div>
+                        <div class="inputfield">
+                            <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                autocomplete="off">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <a href="steps6.html" class="nextbtn disabled">
+                        Next
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
