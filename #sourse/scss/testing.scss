@@ -14,9 +14,11 @@
     .welcomesection__left {
         padding: 106px 30px 163px 80px;
 
-        .descr a {
+        .modal__btn{
             color: #FF6200;
             transition: .3s;
+            text-decoration: underline;
+            cursor: pointer;
 
             &:hover {
                 color: #eea87c;
@@ -360,12 +362,101 @@
     }
 }
 
+.question__form-btn {
+    margin: 36px 0 0 auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: table;
+    width: 180px;
+    height: 48px;
+}
 
 
+.modalquestion {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    opacity: 0;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.show {
+        opacity: 1;
+        z-index: 99;
+        transition: .2s opacity;
+    }
+
+    .modalquestion__inner {
+        max-width: 1216px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 0;
 
 
+        &-title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 35px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        .modalquestion__content {
+            background: #FFFFFF;
+            border-radius: 10px;
+            padding: 72px;
+            position: relative;
+        }
 
 
+        .modalquestion__close {
+            position: absolute;
+            display: block;
+            top: 48px;
+            right: 24px;
+            transition: .4s;
+
+            &:hover {
+                filter: brightness(10%);
+            }
+
+            img {
+                width: 36px;
+                height: 36px;
+                background-size: cover;
+            }
+        }
+
+
+        .rowsect {
+            justify-content: space-between;
+        }
+
+        .landfaqbox {
+            min-height: inherit;
+            height: 236px;
+            padding: 40px 36px;
+
+            .landfaqbox__header img {
+                top: 0;
+                transform: translateY(0%);
+            }
+        }
+    }
+}
+
+
+// ------- RESPONSIVE -------------- //
 
 @media(max-width:1400.8px) {
 
@@ -395,6 +486,11 @@
 
 
 @media (max-width: 1199.8px) {
+
+    .modalquestion .modalquestion__inner .landfaqbox {
+        height: 210px;
+        padding: 35px 30px;
+    }
 
     .question__form-top input,
     .question__form-top .jq-selectbox__select {
@@ -433,6 +529,23 @@
 }
 
 @media (max-width: 991.8px) {
+    .modalquestion .modalquestion__inner {
+        .modalquestion__content {
+            padding: 50px 40px;
+        }
+
+
+        .landfaqbox {
+            height: auto;
+            padding: 35px 30px 45px;
+            margin-bottom: 15px;
+        }
+
+        .modalquestion__close {
+            top: 24px;
+        }
+    }
+
     .question {
         padding: 70px 0;
     }
@@ -442,9 +555,11 @@
     .jq-selectbox {
         width: 100%;
     }
+
     .question__form {
         width: 56%;
     }
+
     .question__content {
         width: 40%;
     }
@@ -497,19 +612,50 @@
 }
 
 @media (max-width: 767.8px) {
+
+    .modalquestion .modalquestion__inner {
+        .modalquestion__content {
+            padding: 35px 20px;
+        }
+
+        .landfaqbox {
+            height: auto;
+            padding: 30px 25px 40px 15px;
+            margin-bottom: 15px;
+        }
+
+        .modalquestion__close {
+            right: 10px;
+            top: 10px;
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .question__form-btn {
+        width: 100%;
+    }
+
     .question {
         padding: 45px 0;
     }
+
     .question__content {
         margin-bottom: 30px;
     }
+
     .question__form,
     .question__content {
         width: 100%;
     }
+
     .question__inner {
         flex-direction: column;
     }
+
     .careserv__left {
         padding: 40px 25px 40px 25px;
     }

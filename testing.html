@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <title>Testing</title>
     <link rel="shortcut icon" href="favicon/favicon.png">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
@@ -24,7 +24,8 @@
                             <p>
                                 Home Health care at your convenience, right in the comfort of home. Care Indeed can help
                                 you, your clients, or your business mitigate risks during the pandemic. Please check out
-                                our <a href="#">Frequently Asked Questions</a> should you have any questions.
+                                our <span class="modal__btn " data-modal="client">Frequently Asked Questions</span>
+                                should you have any questions.
                             </p>
                         </div>
                         <a href="#carebundlepacks" class="laning-orangebtn">Schedule Testing</a>
@@ -46,7 +47,7 @@
                                 Are you a professional caregiver or healthcare worker residing in the SF Bay Area and
                                 think you may have been exposed or planning a routine test? We are now offering a
                                 convenient and straightforward way for you to schedule COVID-19 Rapid and PCR tests in
-                                advance. Please check out our <a href="#">Frequently Asked Questions</a> should you have
+                                advance. Please check out our <span class="modal__btn " data-modal="care">Frequently Asked Questions</span> should you have
                                 any questions.
                             </p>
 
@@ -212,33 +213,185 @@
                                 </select>
                             </div>
                             <textarea placeholder="Message"></textarea>
+                            <button class="question__form-btn laning-orangebtn">submit</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
 
     </main>
 
 
-    <div class="modalbg">
-        <div class="zipcodemodal">
-            <p class="title">Enter your Zip Code to get started</p>
-            <form action="#" id="zipform">
-                <div class="inputfield__wrapper">
-                    <div class="inputfield">
-                        <!-- required="" pattern="[0-9]{5}" -->
-                        <input type="text" id="zip">
-                        <label for="zip">Zip Code</label>
-                        <a href="javascript:void(0)" class="locbtn">
-                            <img src="img/location-target.svg" alt="location target">
-                        </a>
+
+    <div class="modalquestion" id="client">
+        <div class="modalquestion__inner">
+            <div class="modalquestion__content">
+                <a href="#" class="modalquestion__close">
+                    <img src="img/testing/modal_close.svg" alt="close">
+                </a>
+                <h3 class="modalquestion__content-title">Client COVID Testing FAQs</h3>
+                <div class="rowsect">
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
                     </div>
-                    <div class="zipcodemodal__error">Please fill in your current Zip Code</div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <input class="zipsubmit" type="submit" value="Get Started">
-                <a class="zipsubmitlink hide">Close</a>
-            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modalquestion" id="care">
+        <div class="modalquestion__inner">
+            <div class="modalquestion__content">
+                <a href="#" class="modalquestion__close">
+                    <img src="img/testing/modal_close.svg" alt="close">
+                </a>
+                <h3 class="modalquestion__content-title">Caregiver COVID Testing FAQs</h3>
+                <div class="rowsect">
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="landfaqbox">
+                        <div class="landfaqbox__header">
+                            <img src="img/question.png" alt="img">
+                            <h6>Questions goes here </h6>
+                        </div>
+                        <div class="landfaqbox__body">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

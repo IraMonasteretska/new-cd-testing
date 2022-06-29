@@ -458,7 +458,7 @@ $(document).ready(function () {
     // carebundlepacks
     $(".welcomesection").on("click", 'a', function (event) {
         event.preventDefault();
-        console.log('dsfsf')
+        console.log('dsfsf');
 
         var id = $(this).attr('href'),
 
@@ -471,7 +471,7 @@ $(document).ready(function () {
 
 
 
-    // tab switch on testing page 
+    // ------ tab switch on testing page ------ //
 
     $('.switch-btn').on('click', function () {
         let id = $(this).attr('data-id');
@@ -484,6 +484,26 @@ $(document).ready(function () {
 
     // --- start styleselect ----- //
     $("select").styler();
+
+    // ------- modal window ----- //
+    $('.modal__btn').on('click', function (j) {
+        j.preventDefault();
+        let modalId = $(this).attr('data-modal');
+        $('#' + modalId).addClass('show');
+        $('body').css('overflow', 'hidden');
+        return false;
+    });
+
+
+
+    
+
+    $('.modalquestion__close').on('click', function (i) {
+        i.preventDefault();
+        $('.modalquestion').removeClass('show');
+        $('body').css('overflow', 'inherit');
+    });
+
 
 
 });
