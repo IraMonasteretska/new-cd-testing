@@ -605,6 +605,9 @@
         }
     }
 }
+.landfaqbox .landfaqbox__body p a {
+    color: #FF6200;
+}
 
 .landfaqbox .landfaqbox__header img {
     width: 50px;
@@ -933,6 +936,9 @@ header.header .header__nav ul li a {
 }
 
 @media(max-width:767.8px) {
+    .welcomesection .rowsect{
+        flex-direction: column-reverse;
+    }
     .pagewrapper {
         padding: 50px 0;
     }
