@@ -717,7 +717,7 @@
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 16px;
-                color: red;
+                color: #C1420B;
                 position: absolute;
                 top: calc(100% + 4px);
                 display: none;
@@ -743,6 +743,7 @@
 
             &:hover {
                 text-decoration: underline;
+                color: #ff6200;
             }
         }
     }
