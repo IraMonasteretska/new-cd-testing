@@ -123,13 +123,13 @@
             border-radius: 8px;
             text-decoration: none;
             text-transform: uppercase;
-            color: #FF6200;
+            color: #F04800;
             font-family: Avenir heavy;
             transition: 0.3s;
 
             &:hover {
                 color: #fff;
-                background: #FF6200;
+                background: #C1420B;
             }
         }
     }
@@ -220,11 +220,11 @@
         .cbpackages__btn {
             a {
                 background: #D0EFF0;
-                color: #1F9195;
+                color: #046973;
 
                 &:hover {
                     color: #fff;
-                    background: #1F9195;
+                    background: #046973;
                 }
             }
         }
@@ -350,7 +350,7 @@
         line-height: 20px;
         color: #fff;
         border: none;
-        background: #FF6200;
+        background: #C1420B;
         border-radius: 10px;
         cursor: pointer;
         font-family: "Montserrat", sans-serif;
@@ -563,8 +563,8 @@
     box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.104813);
     border-radius: 5px;
     padding: 47px 27px 27px 38px;
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
     min-height: 262px;
 
     .landfaqbox__header {
@@ -1143,3 +1143,4 @@ header.header .header__nav ul li a {
 
     
 }
+

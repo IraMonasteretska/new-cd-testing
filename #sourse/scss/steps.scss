@@ -97,7 +97,7 @@
     .nextbtn {
         margin-top: 40px;
         display: inline-flex;
-        background: #FF6200;
+        background: #C1420B;
         border-radius: 10px;
         width: 200px;
         min-height: 44px;
@@ -619,11 +619,13 @@
             }
 
             a {
-                color: #FF6200;
+                color: #C1420B;
                 text-decoration: none;
+                transition: 0.3s;
 
                 &:hover {
                     text-decoration: underline;
+                    color: #ff6200;
                 }
             }
         }
@@ -729,7 +731,7 @@
             max-width: 66px;
             flex: 0 0 66px;
             text-decoration: none;
-            color: #FF6200;
+            color: #C1420B;
             text-align: center;
             font-size: 18px;
             line-height: 25px;
