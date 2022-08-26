@@ -42,7 +42,7 @@
         font-weight: 500;
         font-size: 21px;
         line-height: 26px;
-        color: #FF6200;
+        color: #C1420B;
     }
 
     .cbpackages__header {
@@ -64,7 +64,7 @@
             font-weight: 600;
             font-size: 48px;
             line-height: 59px;
-            color: #FF6200;
+            color: #E45B1F;
             margin-bottom: 0;
 
             span {
@@ -606,7 +606,13 @@
     }
 }
 .landfaqbox .landfaqbox__body p a {
-    color: #FF6200;
+    transition: 0.3s;
+    color: #C1420B;
+
+    &:hover {
+        color: #FF6200;
+        text-decoration: none;
+    }
 }
 
 .landfaqbox .landfaqbox__header img {
@@ -616,12 +622,20 @@
 
 .laning-orangebtn {
     transition: 0.3s;
+    border: 1px solid #C1420B;
 }
 
 header.header .header__rightsect .header__tel,
 .laning-orangebtn {
     &:hover {
-        background: #ff7300;
+        background: #fff;
+        color: #C1420B;
+    }
+
+    &:active, &:focus {
+        border: 1px solid #D75000;
+        background: #D75000;
+        color: #fff;
     }
 }
 
@@ -1144,3 +1158,17 @@ header.header .header__nav ul li a {
     
 }
 
+.landcontainer .laning-orangebtn {
+    background: #FF6200;
+    border: 1px solid #FF6200;
+
+    &:hover {
+        background: #fff;
+        color: #FF6200;
+    }
+
+    &:focus, &:active {
+        background: #FF6200;
+        color: #fff;
+    }
+}

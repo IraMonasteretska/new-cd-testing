@@ -98,6 +98,7 @@
         margin-top: 40px;
         display: inline-flex;
         background: #C1420B;
+        border: 1px solid #C1420B;
         border-radius: 10px;
         width: 200px;
         min-height: 44px;
@@ -115,10 +116,18 @@
         &.disabled {
             background: #8E8E93;
             pointer-events: none;
+            border: 1px solid #8E8E93;
         }
 
         &:hover {
-            background: #ff7300;
+            background: #fff;
+            color: #C1420B;
+        }
+
+        &:focus, &:active {
+        border: 1px solid #D75000;
+        background: #D75000;
+        color: #fff;
         }
     }
 }

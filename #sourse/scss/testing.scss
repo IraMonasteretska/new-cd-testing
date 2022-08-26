@@ -12,7 +12,7 @@
     }
 
     .welcomesection__left {
-        padding: 106px 30px 163px 80px;
+        padding: 106px 40px 150px 134px;
 
         .modal__btn{
             color: #FF6200;
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 4px;
-    margin: 0 auto 74px;
+    margin: 0 auto 60px;
 }
 
 .switch-btn {
@@ -94,7 +94,7 @@
     margin: 0px auto 20px;
     object-fit: cover;
     object-position: center;
-    border-radius: 7px;
+    border-radius: 10px;
     background: #FFFFFF;
     box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.1);
 
@@ -184,6 +184,19 @@
     display: flex;
     align-items: center;
     height: 539px;
+
+    .descr {
+        p {
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 22px;
+        }
+    }
+
+    .careserv__btn.laning-orangebtn {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 12px 40px;
+    }
 }
 
 .careserv__left {
@@ -370,6 +383,16 @@
     display: table;
     width: 180px;
     height: 48px;
+    background: #FF6200;
+    border: 1px solid #FF6200;
+
+    &:hover {
+        color: #FF6200;
+    }
+
+    &:focus, &:active {
+        color: #fff;
+    }
 }
 
 
@@ -394,7 +417,7 @@
     }
 
     .modalquestion__inner {
-        max-width: 1216px;
+        max-width: 944px;
         width: 100%;
         position: absolute;
         top: 0;
@@ -454,6 +477,149 @@
         }
     }
 }
+
+
+
+
+
+
+.welcomesection.test {
+    border-bottom: 40px solid #269FA3;
+}
+
+.welcomesection.test .welcomesection__left  {
+    h1 {
+        font-size: 38px;
+        line-height: 46px;
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .descr {
+        margin-bottom: 100px;
+        p {
+            color: rgba(0, 0, 0, 0.85);
+        }
+    }
+
+    .laning-orangebtn {
+        padding: 14px 40px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.welcomesection.test .rowsect:nth-child(2n) {
+    .welcomesection__left {
+        padding: 106px 135px 72px 80px;
+
+        h1 {
+            margin-bottom: 55px;
+        }
+
+        .descr {
+            margin-bottom: 55px;
+        }
+    }
+}
+
+.testing__content .testing__content-title {
+    margin-bottom: 40px;
+}
+
+.faqquestionwrap {
+    padding: 16px 24px 16px 24px;
+    box-shadow: 0px 1px 10px rgba(118, 118, 118, 0.2);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .title {
+        margin: 0;
+        color: #383838;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        position: relative;
+        padding-right: 20px;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 8px;
+            background: url('../img/testing/accordeon-arrow.svg') no-repeat center / 100%;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            transition: 0.3s;
+        }
+
+        &.rotate {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .descr {
+       padding-top: 16px;
+       display: none;
+
+        p {
+            color: #000000;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: Avenir book;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #C1420B;
+                transition: 0.3s;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #FF6200;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ------- RESPONSIVE -------------- //
@@ -526,6 +692,20 @@
             padding: 90px 20px 100px 50px;
         }
     }
+
+    .welcomesection.test .welcomesection__left h1 {
+        font-size: 32px;
+    }
+
+    .welcomesection.test .rowsect:nth-child(2n) .welcomesection__left {
+        padding: 90px 50px 72px 50px;
+    }
+
+    .welcomesection.test .rowsect:nth-child(2n) .welcomesection__left h1 {
+        margin-bottom: 25px;
+    }
+
+
 }
 
 @media (max-width: 991.8px) {
@@ -608,6 +788,10 @@
         .welcomesection__left {
             padding: 70px 20px 70px 40px;
         }
+    }
+
+    .modalquestion .modalquestion__inner {
+        max-width: calc(100% - 30px);
     }
 }
 
@@ -715,6 +899,23 @@
     .switch-btn {
         padding: 9px 20px;
     }
+
+    .welcomesection.test .rowsect:nth-child(2n) .welcomesection__left {
+        padding: 40px 15px 50px;
+    }
+
+    .welcomesection.test .rowsect:nth-child(2n) .welcomesection__left h1 {
+        margin-bottom: 15px;
+    }
+
+    .welcomesection.test .rowsect:nth-child(2n) .welcomesection__left .descr {
+        margin-bottom: 30px;
+    }
+
+    .welcomesection.test .welcomesection__left h1 {
+        font-size: 24px;
+        line-height: 140%;
+    }
 }
 
 @media (max-width: 575.8px) {
@@ -736,4 +937,35 @@
     .testing__switcher {
         margin: 0 auto 30px;
     }
+
+    .modalquestion__content-title {
+        font-size: 21px;
+    }
+
+    .modalquestion .modalquestion__inner .modalquestion__content {
+        padding-top: 45px;
+    }
+
+    .faqquestionwrap {
+        margin-bottom: 15px;
+    }
+
+    .faqquestionwrap {
+        padding: 14px 24px 14px 15px;
+    }
+
+    .faqquestionwrap .title {
+        font-size: 14px;
+    }
+
+    .faqquestionwrap .descr p {
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+
+
+
+
+
 }

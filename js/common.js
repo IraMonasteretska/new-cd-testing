@@ -483,7 +483,10 @@ $(document).ready(function () {
     });
 
     // --- start styleselect ----- //
-    $("select").styler();
+    if ($('select').length) {
+        $("select").styler();
+    }
+    
 
     // ------- modal window ----- //
     $('.modal__btn').on('click', function (j) {
@@ -496,7 +499,7 @@ $(document).ready(function () {
 
 
 
-    
+   
 
     $('.modalquestion__close').on('click', function (i) {
         i.preventDefault();
@@ -504,6 +507,18 @@ $(document).ready(function () {
         $('body').css('overflow', 'inherit');
     });
 
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.modalquestion__content').length && !$target.closest('.modal__btn').length) {
+            $('.modalquestion').removeClass('show');
+            $('body').css('overflow', 'inherit');
+        }
+    });
+
+    $('.faqquestionwrap').click(function(){
+        $(this).find('.title').toggleClass('rotate');
+        $(this).find('.descr').slideToggle();
+    });
 
 
 });
