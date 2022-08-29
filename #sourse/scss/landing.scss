@@ -407,7 +407,7 @@
 }
 
 .welcomesection {
-    border-bottom: 32px solid #269FA3;
+    border-bottom: 32px solid #007E8A;
 
     .welcomesection__left {
         padding: 129px 30px 163px 80px;
@@ -610,7 +610,7 @@
     color: #C1420B;
 
     &:hover {
-        color: #FF6200;
+        opacity: 0.7;
         text-decoration: none;
     }
 }
@@ -1158,18 +1158,18 @@ header.header .header__nav ul li a {
     
 }
 
-.welcomesection.test .laning-orangebtn,
-.careserv__inner .careserv__btn.laning-orangebtn {
-    background: #FF6200;
-    border: 1px solid #FF6200;
+// .welcomesection.test .laning-orangebtn,
+// .careserv__inner .careserv__btn.laning-orangebtn {
+//     background: #FF6200;
+//     border: 1px solid #FF6200;
 
-    &:hover {
-        background: #fff;
-        color: #FF6200;
-    }
+//     &:hover {
+//         background: #fff;
+//         color: #FF6200;
+//     }
 
-    &:focus, &:active {
-        background: #FF6200;
-        color: #fff;
-    }
-}
+//     &:focus, &:active {
+//         background: #FF6200;
+//         color: #fff;
+//     }
+// }

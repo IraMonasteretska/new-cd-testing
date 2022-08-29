@@ -456,9 +456,8 @@ $(document).ready(function () {
 
 
     // carebundlepacks
-    $(".welcomesection").on("click", 'a', function (event) {
+    $(".welcomesection").on("click", 'a.scrolllink', function (event) {
         event.preventDefault();
-        console.log('dsfsf');
 
         var id = $(this).attr('href'),
 
@@ -515,8 +514,12 @@ $(document).ready(function () {
         }
     });
 
+
     $('.faqquestionwrap').click(function(){
+        $('.faqquestionwrap .title').not($(this).find('.title')).removeClass('rotate');
         $(this).find('.title').toggleClass('rotate');
+
+        $('.faqquestionwrap .descr').not($(this).find('.descr')).slideUp();
         $(this).find('.descr').slideToggle();
     });
 

@@ -15,7 +15,7 @@
         padding: 106px 40px 150px 134px;
 
         .modal__btn{
-            color: #FF6200;
+            color: #C1420B;
             transition: .3s;
             text-decoration: underline;
             cursor: pointer;
@@ -55,14 +55,14 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 130%;
-    color: #409DA2;
+    color: #007E8A;
     border-radius: 71px;
     padding: 10px 30px;
     transition: .3s;
     text-decoration: none;
 
     &.active {
-        background: #409DA2;
+        background: #007E8A;
         color: #FFFFFF;
 
         &:hover {
@@ -70,8 +70,8 @@
         }
     }
 
-    &:hover {
-        color: #79d5da;
+    &:hover:not(.active) {
+        opacity: 0.7;
     }
 }
 
@@ -118,7 +118,7 @@
         left: 0;
         height: 9px;
         width: 100%;
-        background: #279FA3;
+        background: #279fa3;
     }
 
     &:first-child:after {
@@ -187,6 +187,7 @@
 
     .descr {
         p {
+            font-family: Avenir book;
             color: rgba(0, 0, 0, 0.85);
             line-height: 22px;
         }
@@ -383,11 +384,11 @@
     display: table;
     width: 180px;
     height: 48px;
-    background: #FF6200;
-    border: 1px solid #FF6200;
+    background: #C1420B;
+    border: 1px solid #C1420B;
 
     &:hover {
-        color: #FF6200;
+        color: #C1420B;
     }
 
     &:focus, &:active {
@@ -484,7 +485,7 @@
 
 
 .welcomesection.test {
-    border-bottom: 40px solid #269FA3;
+    border-bottom: 40px solid #007E8A;
 }
 
 .welcomesection.test .welcomesection__left  {
