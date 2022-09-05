@@ -485,7 +485,7 @@ $(document).ready(function () {
     if ($('select').length) {
         $("select").styler();
     }
-    
+
 
     // ------- modal window ----- //
     $('.modal__btn').on('click', function (j) {
@@ -498,7 +498,7 @@ $(document).ready(function () {
 
 
 
-   
+
 
     $('.modalquestion__close').on('click', function (i) {
         i.preventDefault();
@@ -515,13 +515,130 @@ $(document).ready(function () {
     });
 
 
-    $('.faqquestionwrap').click(function(){
+    $('.faqquestionwrap').click(function () {
         $('.faqquestionwrap .title').not($(this).find('.title')).removeClass('rotate');
         $(this).find('.title').toggleClass('rotate');
 
         $('.faqquestionwrap .descr').not($(this).find('.descr')).slideUp();
         $(this).find('.descr').slideToggle();
     });
+
+
+
+
+
+
+
+    // CAREER
+    // Career - tabs
+    let tabs = document.querySelectorAll('.tabbtn'),
+        tabsContent = document.querySelectorAll('.tabcontent'),
+        tabsParent = document.querySelector('.tabs__btns');
+
+    function hideTabContent() {
+
+        tabsContent.forEach(item => {
+            item.classList.add('hide');
+            item.classList.remove('show', 'fade');
+        });
+
+        tabs.forEach(item => {
+            item.classList.remove('tabbtn__active');
+        });
+    }
+
+    function showTabContent(i = 0) {
+        tabsContent[i].classList.add('show', 'fade');
+        tabsContent[i].classList.remove('hide');
+        tabs[i].classList.add('tabbtn__active');
+    }
+
+    hideTabContent();
+    showTabContent();
+
+    tabsParent.addEventListener('mouseover', function (event) {
+        const target = event.target;
+        if (target && target.classList.contains('tabbtn')) {
+            tabs.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        }
+    });
+
+
+    // slider
+    var swiper = new Swiper(".careertestimonials__slider", {
+
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            575: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 58,
+            }
+        }
+    });
+
+    // load more
+    $('.careerjobs__more a').click(function (e) {
+        e.preventDefault();
+        $('.careerjob').addClass('show');
+    });
+
+    // video
+    var video = document.getElementById('video');
+    var button = document.getElementById('playbtn');
+
+    button.addEventListener('click', function () {
+        video.play();
+    });
+
+    $('.videosection__video').click(function () {
+        $('#playbtn').hide();
+    })
+
+
+    $('.careertestimonials__slide-img').click(function(){
+        $('.careervideomodal').addClass('show');
+    });
+
+    $('.closevideomodal').click(function(){
+        $('.careervideomodal').removeClass('show');
+        video.pause();
+        video.load();
+    });
+
+    $(document).click(function (event) {
+        let $target = $(event.target);
+        if (!$target.closest('.careertestimonials__slide-img').length && !$target.closest('.closevideomodal').length && !$target.closest('.video').length && !$target.closest('#playbtn').length) {
+            $('.careervideomodal').removeClass('show');
+            video.pause();
+            video.load();
+        }
+    });
+
 
 
 });
