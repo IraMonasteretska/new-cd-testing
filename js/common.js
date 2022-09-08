@@ -543,14 +543,14 @@ $(document).ready(function () {
         });
 
         tabs.forEach(item => {
-            item.classList.remove('tabbtn__active');
+            item.classList.remove('active');
         });
     }
 
     function showTabContent(i = 0) {
         tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('hide');
-        tabs[i].classList.add('tabbtn__active');
+        tabs[i].classList.add('active');
     }
 
     hideTabContent();
@@ -620,11 +620,11 @@ $(document).ready(function () {
     })
 
 
-    $('.careertestimonials__slide-img').click(function(){
+    $('.careertestimonials__slide-img').click(function () {
         $('.careervideomodal').addClass('show');
     });
 
-    $('.closevideomodal').click(function(){
+    $('.closevideomodal').click(function () {
         $('.careervideomodal').removeClass('show');
         video.pause();
         video.load();
@@ -640,5 +640,22 @@ $(document).ready(function () {
     });
 
 
+    // scroll to
+   
+
+    $('.scrollto').click(function (e) {
+        e.preventDefault();
+
+        var id = $(this).attr('href'),
+
+            top = $(id).offset().top;
+
+        $('body,html').animate({
+            scrollTop: top
+        }, 1000);
+    })
+
+
+    // jobssect
 
 });
