@@ -4,7 +4,7 @@
     flex: 0 0 42%;
 
     .textwrapper {
-        padding: 50px 15px 65px 45px;
+        padding: 50px 54px 65px 54px;
         border-radius: 10px;
         box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.15);
         background: #fff;
@@ -14,10 +14,10 @@
 
         h1 {
             color: #1C1C1E;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 59px;
-            margin-bottom: 45px;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 54px;
+            margin-bottom: 55px;
         }
 
         .descr {
@@ -58,7 +58,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-family: Avenir-Medium;
+    font-family: Avenir heavy;
     font-size: 16px;
     line-height: 22px;
     padding: 13px 24px;
@@ -167,7 +167,7 @@
             h3 {
                 text-align: left;
                 margin-bottom: 35px;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 48px;
                 line-height: 59px;
                 color: #1C1C1E;
@@ -424,6 +424,10 @@
 
 }
 
+.careerjob__right .careerorangebtn {
+    min-width: 177px;
+    text-align: center;
+}
 
 
 .careertestimonials__sliderwrap {
@@ -733,8 +737,13 @@
     overflow: auto;
 }
 
+.jq-selectbox li:hover {
+    background-color: #007E8A;
+}
 
-
+.telcount {
+    display: none;
+}
 
 
 @media(max-width:1400.8px) {
@@ -746,10 +755,6 @@
 
     .careermiansect__textblock .textwrapper .descr {
         margin-bottom: 20px;
-    }
-
-    .careermiansect__textblock .textwrapper {
-        padding: 40px 15px 50px 40px;
     }
 
     .corevalues__tabsbtn {
@@ -867,8 +872,12 @@
 .careervideomodal .videosection__video {
     max-width: calc(100% - 100px);
 }
-
-
+.careerjob__right  {
+    padding-left: 15px;
+}
+.careerjob__right .careerorangebtn {
+    min-width: 140px;
+}
 
 
 }
@@ -960,15 +969,6 @@
         flex: 0 0 100%;
     }
 
-    .traindev__left {
-        order: 2;
-    }
-
-    .traindev__right {
-        order: 1;
-        margin-bottom: 30px;
-    }
-
     .corevalues__tabsbtn {
         padding-left: 0;
     }
@@ -982,6 +982,26 @@
     .careerjobs {
         padding: 70px 60px;
     }
+
+    .careermiansect__img {
+        order: 1;
+    }
+
+    .careermiansect__textblock {
+        order: 2;
+        
+        .textwrapper {
+            border-radius: 0;
+            box-shadow: none;
+            padding-bottom: 0;
+        }
+    }
+
+    .traindev__left img {
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
 
 
 
@@ -1049,7 +1069,7 @@
     }
 
     .corevalues__tabsbtn .title {
-        margin-bottom: 25px;
+        margin-bottom: 27px;
     }
 
     .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text {
@@ -1059,15 +1079,24 @@
     .careeremployment__list ul li {
         max-width: 100%;
         flex: 0 0 100%;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        padding-left: 54px;
+        position: relative;
+
+        .careeremployment__list-ic {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     .careeremployment h3 {
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
     .careeremployment .subtitle {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .careeremployment {
@@ -1089,8 +1118,8 @@
     }
 
     .careerjob__right {
-        margin-top: 20px;
-        text-align: center;
+        margin-top: 32px;
+        text-align: right;
     }
 
     .careervideomodal .videosection__video {
@@ -1108,7 +1137,7 @@
     }
 
     .traindev {
-        padding-top: 60px;
+        padding-top: 112px;
     }
 
     .careertestimonials h3 {
@@ -1116,7 +1145,7 @@
     }
 
   .careeremployment__list ul li:nth-last-child(2) {
-        margin-bottom: 10px;
+        margin-bottom: 12px;
     }
 
 
@@ -1126,5 +1155,182 @@
     .careeremployment h3,
     .careerjobs h3 {
         font-size: 28px;
+    }
+
+    .careermiansect__img img {
+        border-radius: 0 0 10px 10px;
+        vertical-align: top;
+    }
+
+    .careermiansect__textblock .textwrapper {
+        padding-top: 40px;
+    }
+
+    .careermiansect__textblock .textwrapper h1 {
+        margin-bottom: 30px;
+        line-height: 34px;
+    }
+
+    .careermiansect__textblock .textwrapper .descr {
+        margin-bottom: 30px;
+    }
+
+    .careerorangebtn {
+        padding: 9px 22px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .corevalues {
+        padding-top: 112px;
+    }
+
+    .corevalues__tabsbtn .btnswrap {
+        display: none;
+    }
+
+    .tabscontentwrap__img {
+        display: none;
+    }
+
+    .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text {
+        padding-top: 0;
+    }
+    .tabcontent.hide {
+        display: block;
+    }
+    .telcount {
+        display: block;
+        color: #1C1C1E;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        width: 100%;
+        max-width: 60px;
+        flex: 0 0 60px;
+    }
+
+    .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text {
+        width: 100%;
+        max-width: calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+        margin-bottom: 44px;
+    }
+
+    .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text .descr {
+        margin-bottom: 0;
+    }
+
+    .tabcontent:last-child .tabscontentwrap__text {
+        margin-bottom: 0;
+    }
+
+    .traindev__left img {
+        margin-bottom: 40px;
+    }
+
+    .traindev__descr .descr {
+        margin-bottom: 30px;
+    }
+
+    .careertestimonials {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .careertestimonials h3 {
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .careertestimonials .subtitle {
+        text-align: left;
+    }
+
+    .careertestimonials__sliderwrap .swiper-button-next, .careertestimonials__sliderwrap .swiper-button-prev {
+        display: none;
+    }
+
+    .careertestimonials__sliderwrap {
+        max-width: 100%;
+    }
+
+    .careertestimonials__slide-img {
+        height: 155px;
+    }
+
+    .careertestimonials .subtitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .careertestimonials__slide-descr {
+        padding-top: 18px;
+    }
+
+    .careertestimonials__slide-info {
+        -webkit-line-clamp: 4;
+        margin-bottom: 20px;
+    }
+
+    .careertestimonials__slider .swiper-pagination {
+        display: none;
+    }
+
+    .careertestimonials__slider {
+        padding-bottom: 0;
+    }
+
+    .careerjobs h3 {
+        text-align: left;
+    }
+
+    .careerjobs .careerjobs_header .title {
+        font-weight: 500;
+        margin-bottom: 19px;
+    }
+
+    .careerjobs .careerjobs_header {
+        margin-bottom: 36px;
+    }
+
+    .careerjob {
+        padding: 24px;
+    }
+
+    .careerjob__right .careerorangebtn {
+        padding: 9px 16px;
+        min-width: 120px;
+    }
+
+    .careerjobs {
+        padding-top: 112px;
+        padding-bottom: 60px;
+    }
+
+
+
+
+    .careeremployment,
+    .careertestimonials
+     {
+        padding-top: 112px;
+        padding-bottom: 0;
+    }
+
+    .traindev__descr h4 {
+        margin-bottom: 30px;
+    }
+
+    .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text h3,
+    .traindev__descr h4,
+    .careertestimonials h3,
+    .careerjobs h3  {
+        line-height: 34px;
+    }
+
+    .corevalues__tabscontent .tabscontentwrap .tabscontentwrap__text a {
+        display: none;
     }
 }
