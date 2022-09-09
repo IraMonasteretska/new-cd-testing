@@ -586,6 +586,12 @@ $(document).ready(function () {
                 slidesPerView: 1,
                 spaceBetween: 0
             },
+
+            375: {
+                slidesPerView: 1.5,
+                spaceBetween: 20
+            },
+
             575: {
                 slidesPerView: 2,
                 spaceBetween: 20
