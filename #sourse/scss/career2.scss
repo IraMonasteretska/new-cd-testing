@@ -1,0 +1,142 @@
+.welcomesection.welcomesection__career .welcomesection__left {
+    padding: 68px 30px 56px 180px;
+
+    h1 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 56px;
+    }
+
+    .descr {
+        margin-bottom: 45px;
+    }
+}
+
+.infocarsect {
+    padding: 120px 180px 0 180px;
+}
+
+.infocarsectblock__title {
+    width: 100%;
+    max-width: 33%;
+    flex: 0 0 33%;
+    padding-right: 15px;
+
+    p {
+        margin: 0;
+        color: #000;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        max-width: 290px;
+    }
+}
+
+.infocarsectblock__descr {
+    width: 100%;
+    max-width: 67%;
+    flex: 0 0 67%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-family: Avenir book;
+
+    ul,
+    ol {
+        padding-left: 25px;
+        margin: 0 0 20px 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .listtitle {
+        margin-bottom: 0;
+    }
+}
+
+.infocarsectblock {
+    margin-bottom: 60px;
+}
+
+
+@media(max-width:1199.8px) {
+    .welcomesection.welcomesection__career .welcomesection__left {
+        padding-left: 80px;
+    }
+
+    .infocarsect {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .welcomesection.welcomesection__career .welcomesection__left h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .welcomesection.welcomesection__career .welcomesection__left {
+        padding: 68px 20px 56px 40px;
+    }
+
+    .infocarsect {
+        padding: 60px 30px 0 30px;
+    }
+
+    .infocarsectblock__title p {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:575.8px) {
+    .welcomesection.welcomesection__career .welcomesection__left h1 {
+        font-size: 24px;
+        line-height: 140%;
+    }
+
+    .welcomesection.welcomesection__career .welcomesection__left {
+        padding: 30px 15px;
+    }
+
+    .infocarsect {
+        padding: 40px 15px 0 15px;
+    }
+
+    .infocarsectblock__title,
+    .infocarsectblock__descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .infocarsectblock__title {
+        margin-bottom: 20px;
+    }
+
+    .infocarsectblock__title p {
+        font-size: 24px;
+    }
+
+    .infocarsectblock {
+        margin-bottom: 40px;
+    }
+
+
+
+
+
+
+
+
+
+}
